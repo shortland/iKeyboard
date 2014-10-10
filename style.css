@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+/* on tap input area, select all text, some js or jq */
+
+* {
+-webkit-appearance:none;
+}
+html {/*
+    -ms-touch-action: none;
+*/
+}
+
+body {
+background:lightgreen;
+/*
+-webkit-touch-callout: none;
+
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    -webkit-highlight: none;
+    -webkit-tap-highlight-color: rgba(0,255,0,0.4);
+*/
+}
+
+
+button {
+border-radius:5px;
+height:40px;
+width:120px;
+background-color:white;
+color:black;
+}
+button:active, button:hover {
+height:35px;
+width:110px;
+transition:all 320ms;
+}
+
+
+/* This is the CSS for the "input text" area */
+
+.noselect {
+background:white;
+border:1px solid black;
+border-radius:5px;
+height:16px;
+width:140px;
+text-align:center;
+overflow:hidden;
+text-overflow:clip;
+line-height:16px;
+}
+
+#ikeyboard {
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+-webkit-touch-callout: none; 
+    -webkit-user-select: none;
+height:190px;
+background:lightgrey;
+position:fixed;
+bottom:0px;
+left:0px;
+z-index:100;
+border-top:1px solid silver;
+
+
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none; 
+}
+
+.hidden {
+display:none;
+}
+
+#key {
+z-index:101;
+position: fixed;
+width:15px;
+height:80;
+background:white;
+border:1px solid silver;
+color:black;
+border-radius:5px;
+padding:7px 5px 7px 5px;
+text-align:center;
+font-weight:heavy;
+}
+#key:hover {
+background:silver;
+transition:color 320ms;
+color:white;
+border:1px solid white;
+}
+#key:active {
+background:grey;
+color:white;
+border:1px solid white;
+}
+
+.q {
+bottom:120px;
+left:3px;
+}
+.w {
+bottom:120px;
+left:34px;
+}
+.e {
+bottom:120px;
+left:65px;
+}
+.r {
+bottom:120px;
+left:96px;
+}
+.t {
+bottom:120px;
+left:127px;
+}
+.y {
+bottom:120px;
+left:164px;
+}
+.u {
+bottom:120px;
+left:195px;
+}
+.i {
+bottom:120px;
+left:226px;
+}
+.o {
+bottom:120px;
+left:257px;
+}
+.p {
+bottom:120px;
+left:289px; /*was 315 (-27)*/
+}
+/*
+9 spaces top
+31 increment old
+-> 37
+6 spaces
+*/
+
+.a {
+bottom:74px;
+left:20px;
+}
+.s {
+bottom:74px;
+left:51px;
+}
+.d {
+bottom:74px;
+left:82px;
+}
+.f {
+bottom:74px;
+left:113px;
+}
+.g {
+bottom:74px;
+left:144px;
+width:16px !important;
+}
+.h {
+bottom:74px;
+left:174px;
+}
+.j {
+bottom:74px;
+left:206px;
+}
+.k {
+bottom:74px;
+left:240px;
+}
+.l {
+bottom:74px;
+left:273px;
+}
+.caps {
+bottom:28px;
+left:3px;
+}
+.z {
+bottom:28px;
+left:33px;
+}
+.x {
+bottom:28px;
+left:63px;
+}
+.c {
+bottom:28px;
+left:93px;
+}
+.v {
+bottom:28px;
+left:123px;
+}
+.b {
+bottom:28px;
+left:153px;
+}
+.n {
+bottom:28px;
+left:183px;
+}
+.m {
+bottom:28px;
+left:213px;
+}
+.delete {
+bottom:28px;
+left:243px;
+}
+.numbers {
+bottom:1px;
+left:1%;
+width:5% !important;
+}
+.return {
+bottom:1px;
+left:260px;
+width:40px !important;
+}
+.space {
+bottom:1px;
+left:40px;
+width:200px !important;
+}
