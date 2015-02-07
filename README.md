@@ -1,6 +1,9 @@
 iKeyboard
 =========
 
+Formatted for iPhone 6 screen size.
+<b>LIVE DEMO: http://ilankleiman.com/demo/iKeyboard2/index.html</b>
+
 Pure CSS, JS and HTML Mobile Keyboard.
 
   This project is inactive.
