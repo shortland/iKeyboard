@@ -3,7 +3,17 @@ iKeyboard
 
 Pure CSS, JS and HTML Mobile Keyboard.
 
-  For the moment this project is inactive.
-  - Layout formatting ect needs work.
-  - Overall needs speed improvement as-well.
-  - Feel free to take a look, it uses "iScroll" and "JQuery" Libraries in the .js file.
+  This project is inactive.
+  - Layout formatting ect needs work, compatible on iPhone 6 Screen size only.
+  - Overall needs speed improvement as-well, unable to type 'fast'.
+  - Feel free to take a look, it uses "JQuery".
+  
+
+  <b>UPDATE:</b>
+
+Basically redid all the code; simple, flat out, to the point.
+
+Removed dependency on LocalStorage.
+
+More dependent on jQuery.
+
