@@ -1,0 +1,53 @@
+*
+{
+	-webkit-appearance:none;
+}
+body
+{
+	background-color: lightyellow;
+}
+#keyboard_input
+{
+	width: 160px;
+	height: 20px;
+	font-size: 100%;
+	overflow: scroll !important;
+	border: 1px solid black;
+	background-color: white;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: black;
+}
+#keyboard
+{
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	border-top: 1px solid #FFFFFF;
+	background-color: silver;
+	width: 100%;
+	height: 30%;
+}
+.key
+{
+	margin-left: 1px;
+	margin-right: 1px; 
+	margin-bottom: 5px;
+	position: relative;
+	border: 1px solid black;
+	background-color: white;
+	width: 29px;
+	height: 20%;
+	display: inline-block;
+	border-radius: 4px;
+	color: #000000;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+
+
+
+

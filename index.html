@@ -1,68 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
-
-
-  <title>iKeyboard</title>
-  <link rel="stylesheet" href="style.css" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height"/>
+	<title>iKeyBoard 2</title>
+	<script src='js/jquery.js'></script>
+	<script src='js/functions.js'></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <h1>iKeyboard</h1>
-  <div id="input" class="noselect" onClick="select(this.id);"></div>
+	<h1>iKeyBoard 2</h1>
 
-<br><br>
+Text: <div id='keyboard_input'></div>
 
-<div id="second" class="noselect" onClick="select(this.id);"></div>
-<br><br>
-<button type="button" onClick="save_inputs()">Save Inputs</button>
-
-<button type="button" onClick="load()">Load Inputs</button>
-
-<br><br>
-<input type="text"/>
-
-  <script src="script.js"></script>
-</head>
-
-<div id="ikeyboard" class="hidden">
-
-<span id="key" class="q" onClick="writer('q')">Q</span>
-<span id="key" class="w" onClick="writer('w')">W</span>
-<span id="key" class="e" onClick="writer('e')">E</span>
-<span id="key" class="r" onClick="writer('r')">R</span>
-<span id="key" class="t" onClick="writer('t')">T</span>
-<span id="key" class="y" onClick="writer('y')">Y</span>
-<span id="key" class="u" onClick="writer('u')">U</span>
-<span id="key" class="i" onClick="writer('i')">I</span>
-<span id="key" class="o" onClick="writer('o')">O</span>
-<span id="key" class="p" onClick="writer('p')">P</span>
-<!--- Next Line --->
-<span id="key" class="a" onClick="writer('a')">A</span>
-<span id="key" class="s" onClick="writer('s')">S</span>
-<span id="key" class="d" onClick="writer('d')">D</span>
-<span id="key" class="f" onClick="writer('f')">F</span>
-<span id="key" class="g" onClick="writer('g')">G</span>
-<span id="key" class="h" onClick="writer('h')">H</span>
-<span id="key" class="j" onClick="writer('j')">J</span>
-<span id="key" class="k" onClick="writer('k')">K</span>
-<span id="key" class="l" onClick="writer('l')">L</span>
-<!--- third line --->
-<span id="key" class="caps" onClick="boldkeys()">^</span>
-<span id="key" class="z" onClick="writer('z')">Z</span>
-<span id="key" class="x" onClick="writer('x')">X</span>
-<span id="key" class="c" onClick="writer('c')">C</span>
-<span id="key" class="v" onClick="writer('v')">V</span>
-<span id="key" class="b" onClick="writer('b')">B</span>
-<span id="key" class="n" onClick="writer('n')">N</span>
-<span id="key" class="m" onClick="writer('m')">M</span>
-<span id="key" class="delete" onClick="delete_it()"><</span>
-<!--- fourth line --->
-<span id="key" class="numbers" onClick="number_board()">123</span>
-<span id="key" class="space" onClick="writer('&nbsp;')">&nbsp;&nbsp;&nbsp;space&nbsp;&nbsp;&nbsp;</span>
-<span id="key" class="return" onClick="lawl()">return</span>
-
+<div id='keyboard'>
+	<div style='height: 10px'></div>
+		<div style='display: inline-block; width: 1px;'></div>
+		<div class='key' id='q'>Q</div>
+		<div class='key' id='w'>W</div>
+		<div class='key' id='e'>E</div>
+		<div class='key' id='r'>R</div>
+		<div class='key' id='t'>T</div>
+		<div class='key' id='y'>Y</div>
+		<div class='key' id='u'>U</div>
+		<div class='key' id='i'>I</div>
+		<div class='key' id='o'>O</div>
+		<div class='key' id='p'>P</div>
+		<div style='display: inline-block; width: 18px;'></div>
+		<div class='key' id='s'>A</div>
+		<div class='key' id='s'>S</div>
+		<div class='key' id='d'>D</div>
+		<div class='key' id='f'>F</div>
+		<div class='key' id='g'>G</div>
+		<div class='key' id='h'>H</div>
+		<div class='key' id='j'>J</div>
+		<div class='key' id='k'>K</div>
+		<div class='key' id='l'>L</div>
+		<div style='display: inline-block; width: 18px;'></div>
+		<!--<div style='display: inline-block; width: 7px;'></div>-->
+		<div class='key' id='caps' style='padding-right: 2px !important;padding-left: 2px !important; width: 36px !important;margin-left: 7px !important;margin-right: 6px !important;'>^</div>
+		<div class='key' id='z'>Z</div>
+		<div class='key' id='x'>X</div>
+		<div class='key' id='c'>C</div>
+		<div class='key' id='v'>V</div>
+		<div class='key' id='b'>B</div>
+		<div class='key' id='n'>N</div>
+		<div class='key' id='m'>M</div>
+		<div class='key' id='delete' style='padding-right: 2px !important;padding-left: 2px !important; width: 36px !important;margin-left:8px !important;'><</div>
+		<div class='key' id='t' style='margin-left: 7px !important;width: 36px !important;padding-left: 2px !important;padding-right: 2px !important;'>123</div>
+		<div class='key' id='t' style='margin-left: 2px !important;width: 36px !important;padding-left: 2px !important;padding-right: 2px !important;'># +</div>
+                <div class='key' id='t' style='margin-left: 2px !important;margin-right: 2px !important;width: 180px !important;'>space</div>
+                <div class='key' id='t' style='margin-left: 2px !important;width: 66px !important;padding-left: 2px !important;padding-right: 2px !important;'>return</div>
+		
+		
 </div>
 
 </body>
